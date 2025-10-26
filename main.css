@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #607d8b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: red;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.cont {
+    margin-top: 50px;
+}
+
+.form,
+.tasks {
+    background-color: #eee;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 30px auto;
+    width: 50%;
+    display: flex;
+    gap: 0 10px;
+}
+
+.tasks {
+    scroll-behavior: smooth;
+    height: 450px;
+    display: block;
+    padding: 10px 25px;
+    overflow-y: scroll;
+}
+
+.cont input,
+.task {
+    background-color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.cont .input {
+    flex: 1;
+    outline: none;
+}
+
+.cont .add,
+.cont .delet {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cont .add {
+    background-color: green;
+}
+
+.task {
+    margin: 10px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task:hover {
+    background-color: #f7f7f7;
+}
+
+.task.done {
+    background-color: black;
+    opacity: 0.1;
+}
+
+.del {
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width:767px) {
+
+    .form,
+    .tasks {
+        width: 94%;
+        padding: 10px 5px;
+        gap: 7px;
+    }
+
+    .tasks {
+        height: 650px;
+    }
+
+    .cont input {
+        padding: 10px;
+    }
+
+    .task {
+        padding: 15px;
+    }
+}
