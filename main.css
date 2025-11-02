@@ -78,6 +78,8 @@ body {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    font-family:'Segoe UI','Tahoma';
+    font-size:20px;
 }
 
 .task:hover {
@@ -119,4 +121,5 @@ body {
     .task {
         padding: 15px;
     }
+
 }
